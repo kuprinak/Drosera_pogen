@@ -22,12 +22,12 @@ A@{shape: procs, label: "Illumina raw reads (ddRAD)"} --> B([bcl2fastq + Trimmom
 B --> C([ipyrad]);
 
 AA@{shape: procs, label: "Nanopore long reads"} --> K([wf-alignment nextflow workflow v1.2.2]);
-K --> K1([Medaka v.2.0.1])
-K1 --> K2([HAlign])
+K --> K1([Medaka v.2.0.1]);
+K1 --> K2([HAlign]);
 
 AAA@{shape: procs, label: "Illumina raw reads (RNA-seq)"} --> SPA([trimmomatic]);
-SPA-> SPA1([rnaSPAdes])
-SPA1-> SPA2([minimap2])
+SPA-> SPA1([rnaSPAdes]);
+SPA1-> SPA2([minimap2]);
 SPA2-> SPA3([samtools])
 
 ```
