@@ -18,8 +18,8 @@ Full details of the data analysis will be posted soon.
 ### Workflow:
 ```mermaid
 flowchart TB
-A@{shape: procs, label: "Illumina raw reads (ddRAD)"} --> B([ipyrad]);
-B --> C([bcl2fastq + Trimmomatic]);
+A@{shape: procs, label: "Illumina raw reads (ddRAD)"} --> B([bcl2fastq + Trimmomatic]);
+B --> C([ipyrad]);
 AA@{shape: procs, label: "Nanopore raw reads"} --> K([rnaSPAdes]);
 AAA@{shape: procs, label: "Illumina raw reads (RNA-seq)"} --> K([rnaSPAdes]);
 C --> K([smth])
