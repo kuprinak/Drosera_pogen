@@ -20,5 +20,5 @@ A@{shape: procs, label: "Illumina raw reads (ddRAD)"} --> B([SortMeRNA]);
 B --> C([bcl2fastq + Trimmomatic]);
 AA@{shape: procs, label: "Nanopore raw reads"} --> K([rnaSPAdes]);
 AAA@{shape: procs, label: "Illumina raw reads (RNA-seq)"} --> K([rnaSPAdes]);
-C --> K([])
+C --> K([smth])
 ```
