@@ -1,4 +1,4 @@
-# _Drosera_popgen
+# Drosera_popgen
 ## Population genomics of _Drosera rotundifolia_ in Europe (ddRAD)
 
 Full details of the data analysis will be posted soon.
@@ -23,4 +23,4 @@ flowchart TB
 AA@{shape: procs, label: "Nanopore raw reads"} --> K([rnaSPAdes]);
 
 AAA@{shape: procs, label: "Illumina raw reads (RNA-seq)"} --> K([rnaSPAdes]);
-    C --> K([]);
+    C --> K([])
