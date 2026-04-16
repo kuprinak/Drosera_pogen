@@ -26,8 +26,8 @@ K --> K1([Medaka v.2.0.1]);
 K1 --> K2([HAlign]);
 
 AAA@{shape: procs, label: "Illumina raw reads (RNA-seq)"} --> SPA([trimmomatic]);
-SPA-> SPA1([rnaSPAdes]);
-SPA1-> SPA2([minimap2]);
-SPA2-> SPA3([samtools])
+SPA --> SPA1([rnaSPAdes]);
+SPA1 --> SPA2([minimap2]);
+SPA2 --> SPA3([samtools])
 
 ```
