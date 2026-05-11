@@ -22,7 +22,7 @@ A@{shape: procs, label: "Illumina raw reads (ddRAD)"} --> B([bcl2fastq + Trimmom
 B --> C([ipyrad]);
 C --> D([ADMIXTURE]);
 C --> E([Stairway Plot2]);
-C --> F([R])
+C --> F([R: PCoA, DAPC, Fst, Ho, He, HIS, Mantel, RDA])
 
 AA@{shape: procs, label: "Nanopore long reads"} --> K([wf-alignment nextflow workflow v1.2.2]);
 K --> K1([Medaka v.2.0.1]);
