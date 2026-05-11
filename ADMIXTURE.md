@@ -1,11 +1,11 @@
 ## Install bcftools, plink and admixture
 
+## Read vcf file from ipyrad (technical replicates removed manually)
 ```{bash}
 bcftools view -m2 -M2 -v snps md6ct95ms200.vcf -Oz -o md6ct95ms200.biallelic.vcf.gz
 bcftools index md6ct95ms200.biallelic.vcf.gz
 ```
-## Create a numeric mapping
-
+## Prepare data
 ```{bash}
 plink --vcf md6ct95ms200.biallelic.vcf.gz --make-bed --out md6ct95ms200_biallelic --allow-extra-chr 
 
