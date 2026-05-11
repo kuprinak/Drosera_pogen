@@ -20,10 +20,13 @@ Full details of the data analysis will be posted soon.
 flowchart TB
 A@{shape: procs, label: "Illumina raw reads (ddRAD)"} --> B([bcl2fastq + Trimmomatic]);
 B --> C([ipyrad]);
+C --> D([ADMIXTURE]);
+C --> E([Stairway Plot2]);
+C --> F([R])
 
 AA@{shape: procs, label: "Nanopore long reads"} --> K([wf-alignment nextflow workflow v1.2.2]);
 K --> K1([Medaka v.2.0.1]);
-K1 --> K2([HAlign]);
+K1 --> K2([HAlign])
 
 AAA@{shape: procs, label: "Illumina raw reads (RNA-seq)"} --> SPA([trimmomatic]);
 SPA --> SPA1([rnaSPAdes]);
