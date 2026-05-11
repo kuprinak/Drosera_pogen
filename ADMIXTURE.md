@@ -1,9 +1,11 @@
-## install bcftools, plink and admixture
+## Install bcftools, plink and admixture
+
 ```{bash}
 bcftools view -m2 -M2 -v snps md6ct95ms200.vcf -Oz -o md6ct95ms200.biallelic.vcf.gz
 bcftools index md6ct95ms200.biallelic.vcf.gz
 ```
-# Create a numeric mapping
+## Create a numeric mapping
+
 ```{bash}
 plink --vcf md6ct95ms200.biallelic.vcf.gz --make-bed --out md6ct95ms200_biallelic --allow-extra-chr 
 
@@ -21,11 +23,9 @@ plink --bfile md6ct95ms200_numeric \
       --out md6ct95ms200_numeric
 ```
 
-
 ## Run ADMIXTURE
-```{bash}
-source activate admixture
 
+```{bash}
 for K in {1..20}; do
     admixture --cv=10 md6ct95ms200_numeric.bed $K | tee log${K}.out
 done
