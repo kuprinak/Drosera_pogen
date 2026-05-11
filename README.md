@@ -30,7 +30,8 @@ K1 --> K2([HAlign]) --> K3@{shape: procs, label: "cpDNA Alignment"}
 
 AAA@{shape: procs, label: "Illumina raw reads (RNA-seq)"} --> SPA([trimmomatic]);
 SPA --> SPA1([rnaSPAdes]);
-SPA1 --> SPA2([minimap2]);
+SPA1 --> SPA5@{shape: procs, label: "Transcriptome of each sample"}
+SPA5 --> SPA2([minimap2]);
 SPA2 --> SPA3([samtools]) --> SPA4@{shape: procs, label: "cpDNA Alignment"}
 
 ```
