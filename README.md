@@ -1,5 +1,5 @@
 # Drosera_popgen
-## Population genomics of _Drosera rotundifolia_ in Europe (ddRAD)
+## Population genomics of _Drosera rotundifolia_ in Europe (ddRAD and cpDNA)
 
 Full details of the data analysis will be posted soon.
 
